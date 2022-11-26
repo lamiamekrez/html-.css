@@ -1,0 +1,152 @@
+html {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body html {
+  font-family: Segoe UI;
+  padding: 10px;
+}
+
+header {
+  background-color: black;
+  height: 400px;
+}
+.navi {
+  list-style: none;
+}
+.navi > ul {
+  display: flex;
+  justify-content: center;
+}
+.navi > ul > li {
+  padding: 10px 20px;
+}
+.navi > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+}
+.navi > ul > li > a:hover {
+  color: purple;
+  text-decoration: underline purple;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 80px;
+}
+.profile > img {
+  height: 200px;
+  width: 200px;
+  border: 8px solid white;
+  box-shadow: 4px 3px 5px 1px;
+}
+.info {
+  color: white;
+}
+.x {
+  color: blue;
+  font-weight: 800;
+}
+.social {
+  display: flex;
+}
+.social > ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.social > ul > li {
+  margin-top: 30px;
+}
+.social > ul > li > a {
+  color: white;
+}
+.social > ul > li > a:hover {
+  color: purple;
+}
+.cont {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 40px 200px;
+  gap: 50px;
+}
+.me > h3 {
+  margin-bottom: 20px;
+}
+.me > h3:first-child::before {
+  content: "";
+  border: 2px solid blue;
+  margin-right: 10px;
+}
+.button {
+  background-color: red;
+  border-radius: 3px;
+  padding: 10px 10px;
+  margin-top: 50px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: pink;
+  color: black;
+}
+.overview > h3 {
+  margin-bottom: 20px;
+}
+.overview > h3:first-child::before {
+  content: "";
+  border: 2px solid blue;
+  margin-right: 10px;
+}
+.overview > ul {
+  list-style: none;
+}
+.overview > ul > li:nth-child(2n + 1) {
+  color: gray;
+  font-weight: 800;
+}
+.overview > ul > li:last-child {
+  color: green;
+}
+.overview > ul > li:last-child:hover {
+  color: blue;
+}
+.projects {
+  margin: 30px 20px;
+  border-top: 2px solid;
+  padding-top: 40px;
+}
+.projects > h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.my_projects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+.project {
+  border: solid 1px white;
+  height: 280px;
+  padding: 5px 5px 10px 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.project:hover {
+  box-shadow: 0px 2px 6px;
+  transform: translatex(-5px);
+  transform: translatey(-5px);
+}
+.project > img {
+  height: 70%;
+  width: 100%;
+}
+.project > img:hover {
+  filter: blur(1px);
+}
